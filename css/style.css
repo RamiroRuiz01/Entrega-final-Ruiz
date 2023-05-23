@@ -1,0 +1,565 @@
+
+/*reset*/
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fffcf8;
+    color: #191919;
+}
+
+/*navbar bootstrap*/
+
+.container-fluid img{
+    width: 200px;
+    height: 50px;
+}
+
+.container-fluid{
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7622;
+}
+
+.container-fluid a{
+    padding: 12px;
+}
+
+.offcanvas-title{
+    color:#ff7622
+}
+
+.offcanvas-body{
+    background-color: #ff7622;
+}
+
+.offcanvas-body ul li a {
+    color: #fffcf8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: 19px;
+    text-decoration: none;
+    gap:15px;
+}
+
+/*main*/
+
+/* inicio */
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    width: 100%;
+    font-weight:800;
+    color: #ff7622;
+    padding: 20px 50px;
+}
+
+.seccion-cont{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+
+.seccion-cont img{
+    width: 48%;
+    height: 400px;
+    display: flex;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.seccion-cont p{
+    width: 48%;
+}
+
+
+.objetivo{
+    width: 100%;
+    padding: 0px 50px 40px 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 17px;
+}
+
+.objetivo ul{
+    list-style: circle;
+    padding: 0px 20px 20px 0px;
+    width: 100%;
+}
+
+
+
+h2{
+    font-size: 30px;
+    width: 100%;
+    font-weight:800;
+    color: #ff7622;
+    padding: 25px 50px;
+}
+
+
+.obj-cont{
+    margin: 30px 50px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 330px;
+    height: 400px;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 5px 3px gray;
+    margin: 25px;
+}
+
+.card img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 3px;
+    border-bottom: 1px solid grey;
+}
+
+.card-text{
+    font-weight: bold;
+}
+
+/* adopta */
+
+.adopta-cont {
+    display: flex;
+    width: 100%;
+    padding: 0px 50px;
+}
+
+.perro-cont{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "area1 area2 area3 area4"
+    "area5 area6 area7 area8"
+    "area9 area10 area11 area12"
+    "area13 area14 area15 area16"
+    "area17 area18 area19 area20"
+    "area21 area22 area23 area24";
+    gap: 15px;
+    margin: 50px;
+}
+
+.perro-cont div{
+    border-radius: 3px;
+    box-shadow: 2px 3px 5px 2px gray;
+    transition: .4s ;
+}
+
+
+.perro-cont div:hover{
+    transform: scale(1.04);
+    box-shadow: 2px 3px 5px 2px #ff7622;
+}
+
+
+.perro-cont img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+    border-bottom: 1px solid gray;
+}
+
+
+.perro-cont p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+
+/* participa */
+
+.participa-cont{
+    display: flex;
+    width: 100%;
+    padding: 0px 50px;
+}
+
+.donacion-cont{
+    margin: 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.donacion-cont p{ 
+    width: 40%;
+}
+
+.donacion-cont ul{
+    width: 480px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donacion-cont li{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+}
+
+.donacion-cont img{
+    width: 230px;
+    height: 230px;
+}
+
+.hogar{
+    font-size: 30px;
+    width: 100%;
+    font-weight:800;
+    color: #ff7622;
+    padding: 20px 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hogar-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 50px;
+}
+
+.hogar-text p{
+    display:flex;
+    margin: 0px 145px;
+}
+
+.hogar-cont img{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 2px 3px 5px 2px #ff7622;
+}
+
+/* visitanos */
+
+
+.visita-cont{
+    display: flex;
+    width: 100%;
+    padding: 0px 50px;
+    justify-content: space-between;
+}
+
+.visita-cont p{
+    width: 50%;
+}
+
+.titulo-visita{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    width: 100%;
+    font-weight:800;
+    color: #ff7622;
+    padding: 25px 50px;
+}
+
+.mapa{
+    display: flex;
+    width: 550px;
+    height: 350px;
+    border-radius: 10%;
+}
+
+/* contacto */
+
+
+.contacto-cont{
+    display: flex;
+    width: 100%;
+    padding: 0px 50px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 50px 10px 50px;
+}
+
+.formulario input{
+    width: 600px;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.button{
+    width: 80px;
+    height: 40px;
+    margin: 0px 0px 20px 50px;
+    background-color: #ff7622;
+    border: 1px solid #ff7622;
+    color: #fffcf8;
+    box-shadow: 2px 2px 5px 3px #ff4602 ;
+    font-weight: 400;
+}
+
+.formulario textarea{
+    width: 250px;
+    height: 200px;
+}
+
+.formulario p{
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    margin: 0;
+}
+/* footer */
+
+.footer {
+    background-color: #ff7622;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer p{
+    color: #fffcf8;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.footer img{
+    display: flex;
+    width: 200px;
+    height: 55px;
+}
+
+.footer ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 30px;
+}
+
+
+
+/* mediaqueries */
+
+@media (max-width: 1024px) {
+
+    .perro-cont{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "area1 area2 area3"
+        "area4 area5 area6"
+        "area7 area8 area9"
+        "area10 area11 area12"
+        "area13 area14 area15"
+        "area16 area17 area18"
+        "area19 area20 area21"
+        "area22 area23 area24"
+        ;
+    }
+
+    .donacion-cont p{ 
+        width: 100%;
+    }
+    
+    .hogar-text p{
+        margin: 0px 50px;
+    }
+
+.visita-cont{
+    flex-wrap: wrap;
+}
+.visita-cont p{
+    width: 100%;
+}
+.mapa{
+    width: 100%;
+}
+
+
+
+}
+
+@media (max-width: 768px) {
+
+    .seccion-cont{
+        flex-direction: column;
+    }
+    .seccion-cont img{
+        width: 100%;
+    }
+    
+    .seccion-cont p{
+        width: 100%;
+    }
+
+    .perro-cont{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "area1 area2" 
+        "area3 area4"
+        "area5 area6" 
+        "area7 area8"
+        "area9 area10" 
+        "area11 area12"
+        "area13 area14" 
+        "area15 area16"
+        "area17 area18" 
+        "area19 area20"
+        "area21 area22" 
+        "area23 area24";
+    }
+
+    .donacion-cont {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .donacion-cont img{
+        display: flex;
+        justify-content: center;
+        width: 230px;
+        height: 230px;
+    }
+
+    .formulario input{
+        width: 90%
+    }
+
+    
+.donacion-cont ul{
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+}
+
+@media (max-width: 576px) {
+
+.footer{
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+}
+
+.footer p{
+    justify-content: center;
+}
+
+.footer img{
+    justify-content: center;
+    align-self: center;
+}
+
+.footer ul{
+    justify-content: center;
+    margin: 0;
+}
+
+.perro-cont{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "area1" 
+    "area2" 
+    "area3"
+    "area4"
+    "area5 "
+    "area6" 
+    "area7 "
+    "area8"
+    "area9 "
+    "area10" 
+    "area11"
+    "area12"
+    "area13" 
+    "area14" 
+    "area15 "
+    "area16"
+    "area17 "
+    "area18" 
+    "area19" 
+    "area20"
+    "area21" 
+    "area22" 
+    "area23"
+    "area24";
+}
+
+.hogar-text p{
+    margin: 0px 50px;
+}
+
+.formulario input{
+    width: 100%
+}
+
+.donacion-cont ul{
+    width: 100%;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+}
+
+/* bootstrap */
+
+.carousel-inner img{
+    height: 700px;
+    object-fit: cover;
+}
+
+.bi-list{
+    color: #fffcf8;
+}
+
+.navbar-toggler{
+    border: 1px solid #fffcf8;
+}
+
+.bi-instagram{
+    color: #fffcf8;
+    font-size: 35px;
+}
+
+.bi-twitter{
+    color: #fffcf8;
+    font-size: 35px;
+}
+
+.bi-facebook{
+    color: #fffcf8;
+    font-size: 35px;
+}
