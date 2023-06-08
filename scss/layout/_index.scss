@@ -1,0 +1,69 @@
+main{
+    .seccion{
+        .titulo{ @include titulo(center,35px,100%,800,$title-color,20px 50px);
+        } 
+        &-cont{
+            @include flex(row,space-between,nowrap);
+            margin: 0px 50px;
+            & img{
+                width: 48%;
+                height: 400px;
+                display: flex;
+                object-fit: cover;
+                border-radius: 4px;
+            }
+            & p{
+                width: 48%;
+            }
+        }
+    }
+    .obj-cont{
+        margin: 30px 50px 0px 50px;
+        @include flex(row,space-evenly,wrap);
+        .card{
+            width: 330px;
+            height: 350px;
+            border: 2px solid $shadow-color;
+            box-shadow: 2px 2px 5px 3px $shadow-color;
+            margin: 25px;
+            &-cont{
+                img{
+                    width: 100%;
+                    height: 270px;
+                    object-fit: cover;
+                    border-radius: 3px;
+                    border-bottom: 1px solid $shadow-color;
+                }
+                p{
+                    font-weight: bold;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+    .seccion-obj{
+        h2{
+            font-size: 30px;
+            width: 100%;
+            font-weight:800;
+            color: $title-color;
+            padding: 25px 50px;
+        }
+        .objetivo{
+            width: 100%;
+            padding: 0px 50px 40px 50px;
+            display: flex;
+            justify-content: space-around;
+            gap: 17px;
+            & ul{
+                list-style: circle;
+                padding: 0px 20px 20px 0px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+

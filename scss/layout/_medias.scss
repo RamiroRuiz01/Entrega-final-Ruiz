@@ -1,0 +1,148 @@
+@media (max-width: 1024px) {
+    main{
+        .perro-cont{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "area1 area2 area3"
+            "area4 area5 area6"
+            "area7 area8 area9"
+            "area10 area11 area12"
+            "area13 area14 area15"
+            "area16 area17 area18"
+            "area19 area20 area21"
+            "area22 area23 area24"
+            ;
+        }
+        .donacion-cont p{ 
+            width: 100%;
+        }
+        .hogar-text p{
+            margin: 0px 50px;
+        }
+        .visita-cont{
+            flex-wrap: wrap;
+            & p{
+                width: 100%;
+            }
+        }
+        .mapa{
+        width: 100%;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+    main{
+        .seccion-cont{
+            flex-direction: column;
+            & img{
+                width: 100%;
+            }
+            & p{
+                width: 100%;
+            }
+        }
+        .perro-cont{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "area1 area2" 
+            "area3 area4"
+            "area5 area6" 
+            "area7 area8"
+            "area9 area10" 
+            "area11 area12"
+            "area13 area14" 
+            "area15 area16"
+            "area17 area18" 
+            "area19 area20"
+            "area21 area22" 
+            "area23 area24";
+        }
+        .donacion-cont {
+            display: flex;
+            justify-content: center;
+            & img{
+                display: flex;
+                justify-content: center;
+                width: 230px;
+                height: 230px;
+            }
+            & ul{
+                align-items: flex-start;
+                margin: 0;
+                padding: 0;
+                }
+        }
+        .formulario input{
+            width: 90%
+        }
+    }
+    
+}
+
+@media (max-width: 576px) {
+    footer{
+        .footer{
+            flex-direction: column;
+            justify-content: center;
+            height: 150px;
+            & p{
+                justify-content: center;
+            }
+            & img{
+                justify-content: center;
+                align-self: center;
+            }
+            & ul{
+                justify-content: center;
+                margin: 0;
+            }
+        }
+    }
+    main{
+        .perro-cont{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "area1" 
+            "area2" 
+            "area3"
+            "area4"
+            "area5 "
+            "area6" 
+            "area7 "
+            "area8"
+            "area9 "
+            "area10" 
+            "area11"
+            "area12"
+            "area13" 
+            "area14" 
+            "area15 "
+            "area16"
+            "area17 "
+            "area18" 
+            "area19" 
+            "area20"
+            "area21" 
+            "area22" 
+            "area23"
+            "area24";
+        }
+        .hogar-text p{
+            margin: 0px 50px;
+        }
+        .formulario input{
+            width: 100%
+        }
+        .donacion-cont ul{
+            width: 100%;
+            align-items: flex-start;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

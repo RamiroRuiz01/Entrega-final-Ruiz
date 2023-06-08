@@ -1,0 +1,74 @@
+main{
+    .participa{
+        .titulo{@include titulo(center,35px,100%,800,$title-color,20px 50px);
+        } 
+        &-cont{
+            display: flex;
+            width: 100%;
+            padding: 0px 50px;
+        }
+    }
+    h2{
+        font-size: 30px;
+        width: 100%;
+        font-weight:800;
+        color: $title-color;
+        padding: 25px 50px;
+    }
+    .donacion{
+        &-cont{
+            @include flex(row,space-between,wrap);
+            margin: 0px 50px;
+            & ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 480px;
+                list-style: none;
+            }
+            & li{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 22px;
+            }
+            & img{
+                width: 230px;
+                height: 230px;
+            }
+            & p{ 
+                width: 40%;
+            }
+        }
+    }
+    .hogar{
+        &-title{
+            font-size: 30px;
+            width: 100%;
+            font-weight:800;
+            color: $title-color;
+            padding: 20px 50px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        &-text p{
+            display:flex;
+            margin: 0px 145px;
+        }
+        &-cont{
+            @include flex(row,center,wrap);
+            gap: 20px;
+            margin: 40px 50px;
+            & img{
+                width: 280px;
+                height: 280px;
+                object-fit: cover;
+                border-radius: 50%;
+                box-shadow: 2px 3px 5px 2px $title-color;
+            }
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,36 @@
+main{
+    .visitanos{
+        .titulo{@include titulo(center,35px,100%,800,$title-color,20px 50px);
+        } 
+        &-cont{
+            @include flex(row,space-between,nowrap);
+            width: 100%;
+            padding: 0px 50px;
+            & p{
+                width: 50%;
+            }
+            .mapa{
+                display: flex;
+                width: 550px;
+                height: 350px;
+                border-radius: 10%;
+            }
+        }
+    }
+    .visita{
+        .visita-title{
+            @include flex(row,center,nowrap);
+            font-size: 30px;
+            width: 100%;
+            font-weight:800;
+            color: $title-color;
+            padding: 25px 50px;
+        }
+        .carousel-inner img{
+            height: 700px;
+            object-fit: cover;
+        }
+    }
+}
+
+

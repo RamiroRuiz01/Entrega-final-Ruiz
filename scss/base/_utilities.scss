@@ -1,0 +1,16 @@
+@mixin titulo($justify,$size,$widht,$weight,$color,$padding){
+    display: flex;
+    justify-content: $justify;
+    font-size: $size;
+    width: $widht;
+    font-weight: $weight;
+    color: $color;
+    padding: $padding;
+}
+
+@mixin flex($direction,$justify,$wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
