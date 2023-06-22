@@ -23,8 +23,11 @@ main{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 480px;
+                width: 400px;
+                height: 220px;
                 list-style: none;
+                margin: 0;
+                padding: 0;
             }
             & li{
                 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -35,7 +38,7 @@ main{
                 height: 230px;
             }
             & p{ 
-                width: 40%;
+                width: 550px;
             }
         }
     }
