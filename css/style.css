@@ -400,13 +400,15 @@ main .contacto .button:hover {
 }
 @media (max-width: 800px) {
   main .seccion-cont {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   main .seccion-cont img {
     width: 100%;
+    padding-bottom: 15px;
   }
   main .seccion-cont p {
     width: 100%;
+    margin: 0;
   }
   main .perro-cont {
     grid-template-columns: repeat(2, 1fr);
